@@ -42,8 +42,8 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	<link rel="SHORTCUT ICON" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/ap_home.png" /> 
+	<link rel="SHORTCUT ICON" href="<?php bloginfo('url'); ?>/images/favicon.ico">
+	<link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/images/ap_home.png" /> 
 
 	<?php wp_head(); ?>
 

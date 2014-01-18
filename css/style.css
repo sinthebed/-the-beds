@@ -159,6 +159,9 @@ body#Release {
 body#Release header {
   margin-bottom: 60px;
 }
+body#Release h1 img {
+  width: 221px;
+}
 body#Release h2 {
   margin-bottom: 60px;
   text-align: center;
@@ -191,6 +194,9 @@ body#Release #ReleaseMain .event figure {
   width: 155px;
   display: table-cell;
 }
+body#Release #ReleaseMain .event figure img {
+  width: 115px;
+}
 body#Release footer {
   clear: both;
   font-size: 18px;
@@ -198,6 +204,15 @@ body#Release footer {
 }
 body#Release footer .release_social {
   margin-bottom: 10px;
+}
+body#Release #Entrance {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+body#Release #Entrance a {
+  color: #FFF;
+  text-decoration: none;
 }
 @media screen and (max-width: 600px) {
   h2 img {

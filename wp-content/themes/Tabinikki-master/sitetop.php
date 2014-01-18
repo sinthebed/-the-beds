@@ -1,3 +1,11 @@
+<?php
+/*
+Template Name: サイトトップ
+*/
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,16 +18,18 @@
     <meta property="og:title" content="(the)beds">
     <meta property="og:type" content="website">
     <meta property="og:description" content="hallo,we're (the)beds.this is official website of (the)beds">
-    <meta property="og:url" content="http://(the)beds.com">
-    <meta property="og:image" content="http://the-beds.com/images/ogp_image.png">
+    <meta property="og:url" content="<?php bloginfo('url'); ?>">
+    <meta property="og:image" content="<?php bloginfo('url'); ?>/images/ogp_image.png">
     <meta property="og:site_name" content="(the)beds公式ウェブサイト">
     <meta property="og:email" content="info@the-beds.com">
     
-<link rel="SHORTCUT ICON" href="images/favicon.ico"><link rel="apple-touch-icon" href="images/ap_home.png" /> 
-<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="SHORTCUT ICON" href="<?php bloginfo('url'); ?>/images/favicon.ico">
+<link rel="apple-touch-icon" href="<?php bloginfo('url'); ?>/images/ap_home.png" /> 
+<link rel="stylesheet" href="<?php bloginfo('url'); ?>/css/style.css" media="all">
 <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:700' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="js/script.js"></script>
+<script src="<?php bloginfo('url'); ?>/js/script.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -41,14 +51,14 @@
 
 <div id="Container">
 <header>
-	<h1><img src="images/release_seal.png" alt="thebeds"></h1>
+	<h1><a href="<?php bloginfo('url'); ?>/blog"><img src="images/release_seal.png" alt="thebeds"></a></h1>
 </header>
 <div id="ReleaseMain">
  <h2><img src="images/release_caption.png" alt="release"></h2>
 <div class="event"><p>2014.02.21(fri) <br>
 「washing life one」発売記念ライブ<br>
 @Ikebukuro Adm <br>
-w/nice songers
+w/関谷謙太郎/tape me wonder
 </p>
 <figure><img src="images/release_cd.png" alt="washing life one">
 <figcaption>washing life one<br>¥1000(tax included)</figcaption>
@@ -65,6 +75,10 @@ w/good bands
 </figure>
 </div>
 </div>
+
+
+
+<p id="Entrance"><a href="<?php bloginfo('url'); ?>/blog">enter the site</a></p>
 
 
 <footer>
