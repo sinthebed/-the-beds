@@ -1,4 +1,10 @@
+<?php /*
+Template Name: ブログトップ
+*/ ?>
+
 <?php get_header(); ?>
+
+　　<?php query_posts('post_type=post&paged='.$paged); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -8,10 +14,9 @@
 
 			<h3 class="time-author"><time datetime="<?php echo date(DATE_W3C); ?>" pubdate class="updated"><?php the_time('F jS, Y') ?></time><?php _e(' in','typesense'); ?> <?php the_category(', ') ?>
 			 | <?php comments_popup_link(__('No Comments &#187;','tabinikki'), __('1 Comment &#187;','tabinikki'), __('% Comments &#187;','tabinikki')); ?></h3>
-			<div class="entry-content">
-				<?php the_content(続きを読む); ?>
-			</div>
-
+<?php global $more; $more = FALSE; ?>
+   <?php the_excerpt(); ?>
+   <?php $more = TRUE; ?>
 		</article>
 
 	<?php endwhile; ?>
@@ -23,5 +28,6 @@
 		<h2><?php _e('Nothing Found','tabinikki'); ?></h2>
 
 	<?php endif; ?>
+    <?php wp_reset_query(); ?>
 
 <?php get_footer(); ?>

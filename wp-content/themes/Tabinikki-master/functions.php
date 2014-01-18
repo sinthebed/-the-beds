@@ -139,7 +139,7 @@
 	// Changing excerpt more
    function new_excerpt_more($more) {
    global $post;
-   		return '… <a href="'. get_permalink($post->ID) . '" class="read-more">' . 'Read More' . '</a>';
+   		return '… <a href="'. get_permalink($post->ID) . '" class="read-more">' . '続きを読む' . '</a>';
    }
    add_filter('excerpt_more', 'new_excerpt_more');
 
