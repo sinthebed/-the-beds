@@ -58,6 +58,8 @@ Template Name: サイトトップ
 <div class="event"><p>2014.02.21(fri) <br>
 「washing life one」発売記念ライブ<br>
 @Ikebukuro Adm <br>
+open 19:00/start 19:30<br>
+adv ¥2,300/door ¥2,500<br>
 w/関谷謙太郎/tape me wonder
 </p>
 <figure><img src="images/release_cd.png" alt="washing life one">
@@ -68,14 +70,16 @@ w/関谷謙太郎/tape me wonder
 <div class="event"><p>2014.03.29(sat)<br>
 「washing life two」発売記念ライブ<br>
 @Shibuya 7th floor<br>
-w/good bands
+open 18:30/start 19:00<br>
+adv ¥2,300/door ¥2,500<br>
+w/カモレ/the coopeez
 </p>
 <figure><img src="images/release_cd.png" alt="washing life two">
 <figcaption>washing life two <br>1000yen(zeikomi)</figcaption>
 </figure>
 </div>
 </div>
-
+<p class="gocontact">チケットのお取り置きは<a href="/contact">お問い合わせフォーム</a>よりお願いします。</p>
 
 
 <p id="Entrance"><a href="<?php bloginfo('url'); ?>/blog">enter the site</a></p>

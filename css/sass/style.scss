@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import "compass";
+
+
+$releaseBaseColor:#020A2D;
+$margin:60px;
+$mMargin:20px;
+$sMargin:10px;
+$fontF: 'Pontano Sans', sans-serif;
+
+body#Release{
+	background-color: $releaseBaseColor;
+	width:100%;
+	height:100%;
+	text-align: center;
+	color:#FFF;
+	font-family: $fontF;
+	header{
+		margin-bottom:$margin;
+	}
+	h1 img{
+		width:221px;
+	}
+	h2{
+		margin-bottom: $margin;
+		text-align:center;
+	}
+	#Container{
+		background: url("../images/release_bg.jpg") center center no-repeat fixed;
+		background-size:cover;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		padding: $margin 0 0 0;
+	}
+	#ReleaseMain{
+		margin-bottom: $margin;
+		.event{
+			text-align: center;
+			margin:0 auto $margin;
+			clear:both;
+			display:table;
+			p{
+				text-align: left;
+				display:table-cell;
+				vertical-align: middle;
+				font-size:18px;
+				line-height:140%;
+			}
+			figure{
+				width:155px;
+				display:table-cell;
+				img{
+					width:115px;
+				}
+			}
+		}
+	}
+	.gocontact{
+		padding: $mMargin;
+		a{
+			color:#FFF;
+		}
+	}
+	footer{
+		clear:both;
+		font-size:18px;
+		padding: $sMargin;
+		.release_social{
+			margin-bottom: $sMargin;
+		}
+	}
+	#Entrance{
+		font-family: 'Montserrat Subrayada', sans-serif;
+		font-size:40px;
+		margin-bottom: $mMargin;
+		a{
+		color:#FFF;
+		text-decoration: none;
+		}
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	h2 img{
+		width: 99%;
+	}
+}
