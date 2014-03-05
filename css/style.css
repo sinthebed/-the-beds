@@ -1,3 +1,4 @@
+/* line 11, sass/style.scss */
 body#Release {
   background-color: #020a2d;
   width: 100%;
@@ -5,13 +6,17 @@ body#Release {
   text-align: center;
   color: #FFF;
   font-family: "Pontano Sans", sans-serif; }
+  /* line 18, sass/style.scss */
   body#Release header {
     margin-bottom: 60px; }
+  /* line 21, sass/style.scss */
   body#Release h1 img {
     width: 221px; }
+  /* line 24, sass/style.scss */
   body#Release h2 {
     margin-bottom: 60px;
     text-align: center; }
+  /* line 28, sass/style.scss */
   body#Release #Container {
     background: url("../images/release_bg.jpg") center center no-repeat fixed;
     background-size: cover;
@@ -19,42 +24,57 @@ body#Release {
     -moz-background-size: cover;
     -o-background-size: cover;
     padding: 60px 0 0 0; }
+  /* line 36, sass/style.scss */
   body#Release #ReleaseMain {
     margin-bottom: 60px; }
+    /* line 38, sass/style.scss */
     body#Release #ReleaseMain .event {
       text-align: center;
       margin: 0 auto 60px;
       clear: both;
       display: table; }
+      /* line 43, sass/style.scss */
       body#Release #ReleaseMain .event p {
         text-align: left;
         display: table-cell;
         vertical-align: middle;
         font-size: 18px;
         line-height: 140%; }
+      /* line 50, sass/style.scss */
       body#Release #ReleaseMain .event figure {
         width: 155px;
         display: table-cell; }
+        /* line 53, sass/style.scss */
         body#Release #ReleaseMain .event figure img {
           width: 115px; }
+  /* line 59, sass/style.scss */
   body#Release .gocontact {
     padding: 20px; }
+    /* line 61, sass/style.scss */
     body#Release .gocontact a {
       color: #FFF; }
+  /* line 65, sass/style.scss */
   body#Release footer {
     clear: both;
     font-size: 18px;
     padding: 10px; }
+    /* line 69, sass/style.scss */
     body#Release footer .release_social {
       margin-bottom: 10px; }
+  /* line 73, sass/style.scss */
   body#Release #Entrance {
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 40px;
     margin-bottom: 20px; }
+    /* line 77, sass/style.scss */
     body#Release #Entrance a {
       color: #FFF;
       text-decoration: none; }
 
 @media screen and (max-width: 600px) {
+  /* line 86, sass/style.scss */
   h2 img {
     width: 99%; } }
+/* line 92, sass/style.scss */
+#fb-root {
+  display: none; }
