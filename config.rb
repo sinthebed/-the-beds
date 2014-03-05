@@ -7,6 +7,10 @@ sass_dir = "css/sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 
+
+cache = false
+asset_cache_buster :none
+
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
