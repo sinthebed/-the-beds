@@ -8,7 +8,7 @@ body#Sitetop {
 
 .sitetop_ttl {
   padding: 100px 0;
-  background: url(../images/top_ttl_bg.png) center center no-repeat;
+  background: url(../images/top_ttl_bg.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -187,21 +187,22 @@ body#Sitetop {
 .sitetop_footer__menu--tw {
   height: 65px;
   background: url(../images/top_icon_footer_tw.png) left center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: 100px 75px;
+  -moz-background-size: 100px 75px;
+  -o-background-size: 100px 75px;
+  background-size: 100px 75px;
   display: table;
   padding-left: 100px;
   margin: 0 auto 20px; }
 
 .sitetop_footer__menu--fb {
-  height: 80px;
+  height: 65px;
   background: url(../images/top_icon_footer_fb.png) left center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
+  display: table;
   padding-left: 100px;
   margin: 0 auto 20px;
   overflow: hidden;

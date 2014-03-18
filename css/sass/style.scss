@@ -39,7 +39,7 @@ body#Sitetop{
 	
 .sitetop_ttl{
 	@include sectionset($lMargin);
-	background: url(../images/top_ttl_bg.png) center center no-repeat;
+	background: url(../images/top_ttl_bg.jpg) center center no-repeat;
 	@include background-size(cover);
 	width:100%;
 	h1 img{
@@ -215,15 +215,16 @@ body#Sitetop{
 .sitetop_footer__menu--tw{
 	height:65px;
 	background: url(../images/top_icon_footer_tw.png) left center no-repeat;
-	@include background-size(contain);
+	@include background-size(100px 75px);
 	display: table;
 	padding-left:100px;
 	margin: 0 auto $mMargin;
 }
 .sitetop_footer__menu--fb{
-	height: 80px;
+	height: 65px;
 	background: url(../images/top_icon_footer_fb.png) left center no-repeat;
 	@include background-size(contain);
+	display: table;
 	padding-left:100px;
 	margin: 0 auto $mMargin;
 	@include clearfix;

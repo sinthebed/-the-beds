@@ -40,10 +40,11 @@ Template Name: サイトトップ
 
 </head>
 
-<body id="Release">
+<body id="Sitetop">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+<!--<div id="loading"><img src="images/loading.gif"></div>-->
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -55,12 +56,23 @@ Template Name: サイトトップ
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="Container">
-<header>
-	<h1><img src="images/release_seal.png" alt="thebeds"></h1>
-</header>
-<div id="ReleaseMain">
- <h2><img src="images/release_caption.png" alt="release"></h2>
-<div class="event"><p>2014.02.21(fri) <br>
+<section class="sitetop_ttl">
+	<h1><img src="images/top_ttl.png" alt="we're the beds"></h1>
+	<p>↓<br>scroll down</p>
+</section>
+
+<section class="sitetop_release">
+	<h2>
+	<img src="images/top_release.png" alt="release"><br>
+	<img src="images/top_new_two_albums.png" alt="New Two Albums">
+	</h2>
+	<iframe width="560" height="315" src="//www.youtube.com/embed/qB3DZLCgSDw" frameborder="0" allowfullscreen></iframe>
+</section>
+
+
+<section class="sitetop_event"> 
+ <h2>Event</h2>
+ <div><p>2014.02.21(fri) <br>
 「washing life one」発売記念ライブ<br>
 @Ikebukuro Adm <br>
 open 19:00/start 19:30<br>
@@ -70,9 +82,18 @@ w/関谷謙太郎/tape me wonder
 <figure><img src="images/wash1jkt_min.jpg" alt="washing life one">
 <figcaption>washing life one<br>¥1000(tax included)</figcaption>
 </figure>
+<ul>
+	<li>1.砂は舞う</li>
+	<li>2.ヤギの手紙</li>
+	<li>3.抵抗の目印</li>
+	<li>4.antenna</li>
+	<li>5.夜の歌</li>
+	<li>6.ab</li>
+</ul>
 
 </div>
-<div class="event"><p>2014.03.29(sat)<br>
+
+<div><p>2014.03.29(sat)<br>
 「washing life two」発売記念ライブ<br>
 @Shibuya 7th floor<br>
 open 18:30/start 19:00<br>
@@ -82,22 +103,101 @@ w/カモレ/the coopeez
 <figure><img src="images/release_cd.png" alt="washing life two">
 <figcaption>washing life two <br>1000yen(zeikomi)</figcaption>
 </figure>
-</div>
-</div>
+<ul>
+	<li>1.サイクリン</li>
+	<li>2.シークレットラック</li>
+	<li>3.rococo</li>
+	<li>4.ねずのばん</li>
+	<li>5.ostrich policy</li>
+	<li>6.please!!</li>
+</ul>
 
-<p class="gocontact">チケットのお取り置きは<a href="/contact">お問い合わせフォーム</a>よりお願いします。</p>
-
-
-<p id="Entrance"><a href="http://the-beds.com/blog">enter the site</a></p>
-
-<footer>
-<div class="release_social">
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="sinthebed" data-lang="ja">ツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<div class="fb-like" data-href="http://the-beds.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 </div>
 
-© 2013 (the)beds. All Rights Reserved. Be Respectful.</footer>
+<p class="sitetop_release__contact">チケットのお取り置きは<a href="/contact">お問い合わせフォーム</a>よりお願いします。</p>
+</section>
+
+<section class="sitetop_pv">
+	<h2>And New PV!</h2>
+	<div>
+		<p>1st pv"ヤギの手紙"（washing life one 収録曲）</p>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/GSMXKC1lfqI" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div>
+		<p>2nd pv"サイクリン（washing life two 収録曲）</p>
+		<iframe width="560" height="315" src="//www.youtube.com/embed/b2i6amUYMyw" frameborder="0" allowfullscreen></iframe>
+	</div>
+</section>
+
+
+<section class="sitetop_member">
+<h2><img src="images/top_member_ttl.png" alt="the beds are..."></h2>
+<ul>
+<li><figure>
+		<img src="images/top_member_fujita.jpg">
+	<figcaption>Vo,Gt Takanobu Fujita<br>
+	<a href="https://twitter.com/boobeethebeds"><img src="images/top_icon_tw.png"></a>
+	</figcaption>
+	</figure>
+	</li>
+<li>
+	<figure>
+		<img src="images/top_member_iwasa.jpg">
+	<figcaption>Ba Taketo Iwasa<br>
+	<a href="https://twitter.com/iwasathepublic"><img src="images/top_icon_tw.png"></a>　<a href="https://www.facebook.com/wasawasakt"><img src="images/top_icon_fb.png"></a>
+	</figcaption>
+	</figure>
+</li>
+
+<li>
+	<figure>
+		<img src="images/top_member_yamada.jpg">
+	<figcaption>Dr,Cho Shin-ya Yamada<br>
+	<a href="https://twitter.com/sinthebed"><img src="images/top_icon_tw.png"></a>　<a href="https://www.facebook.com/still.ill.not"><img src="images/top_icon_fb.png"></a>
+	</figcaption>
+	</figure>
+</li>
+
+<li>
+	<figure>
+		<img src="images/top_member_hata.jpg">
+	<figcaption>Gt,Cho Shinkichi Hata<br>
+	<a href="https://twitter.com/hatashinkichi"><img src="images/top_icon_tw.png"></a><br>
+	*support
+	</figcaption>
+	</figure>
+</li>
+</ul>
+</section>
+
+
+
+<footer class="sitetop_footer">
+<div>
+	<figure><img src="images/top_logo.png"></figure>
+	<ul>
+		<li>MENU</li>
+		<li><a href="/diary">diary</a></li>
+		<li><a href="/schedule">schedule</a></li>
+		<li><a href="/sounds">sounds</a></li>
+		<li><a href="/links">links</a></li>
+		<li><a href="/contact">contact</a></li>
+	</ul>
+	<ul>
+	    <li>SHARE</li>
+	<li class="sitetop_footer__menu--tw">
+	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-count="vertical"</span>ツイート</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</li>
+	<li class="sitetop_footer__menu--fb">
+	<div class="fb-like" data-href="http://the-beds.com/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	</li>
+	</ul>
+</div>
+
+<p class="sitetop_footer__copy">© 2013 (the)beds. All Rights Reserved. Be Respectful.</p>
+
+</footer>
 
 </div>
 
