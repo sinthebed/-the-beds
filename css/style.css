@@ -7,7 +7,7 @@ body#Sitetop {
   font-family: "Pontano Sans", sans-serif; }
 
 .sitetop_ttl {
-  padding: 100px 0;
+  padding: 60px 0;
   background: url(../images/top_ttl_bg.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -32,8 +32,7 @@ body#Sitetop {
 .sitetop_release {
   padding: 60px 0; }
   .sitetop_release h2 {
-    margin-bottom: 20px;
-    font-size: 500%; }
+    margin-bottom: 20px; }
 
 .sitetop_event {
   padding: 60px 0;
@@ -42,15 +41,20 @@ body#Sitetop {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%; }
   .sitetop_event h2 {
     margin-bottom: 20px;
     font-size: 500%; }
   .sitetop_event div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     text-align: center;
-    width: 630px;
     margin: 0 auto;
-    padding: 0 2% 20px;
+    padding: 0 5px 20px;
     overflow: hidden;
     *zoom: 1; }
     .sitetop_event div p, .sitetop_event div figure, .sitetop_event div ul {
@@ -59,6 +63,8 @@ body#Sitetop {
       text-align: left; }
     .sitetop_event div img {
       width: 150px; }
+    .sitetop_event div ul {
+      padding-left: 10px; }
     .sitetop_event div li {
       list-style-type: none; }
   .sitetop_event .sitetop_release__contact a {
@@ -96,18 +102,14 @@ body#Sitetop {
   *zoom: 1;
   background-color: #EEF1EA; }
   .sitetop_member h2 {
-    margin-bottom: 20px;
-    font-size: 500%; }
+    margin-bottom: 20px; }
   .sitetop_member ul {
-    margin: 0 auto; }
+    padding-left: 0; }
   .sitetop_member li {
-    margin: 0 0 60px;
-    float: left;
-    width: 49%; }
+    margin-bottom: 20px; }
   .sitetop_member figure {
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
     text-align: center;
-    position: relative;
     width: 300px; }
     .sitetop_member figure > img {
       -webkit-border-radius: 150px;
@@ -125,21 +127,17 @@ body#Sitetop {
     -moz-transition: all 0.2s linear 0.2s;
     -o-transition: all 0.2s linear 0.2s;
     transition: all 0.2s linear 0.2s;
-    position: absolute;
-    top: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0 auto;
     width: 300px;
-    height: 300px;
     background-color: rgba(38, 38, 38, 0.8);
     -webkit-border-radius: 150px 150px;
     -moz-border-radius: 150px / 150px;
     border-radius: 150px / 150px;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    padding-top: 130px;
-    z-index: 1; }
+    opacity: 0; }
     .sitetop_member figcaption img {
       width: 40px;
       height: 40px; }
@@ -153,17 +151,14 @@ body#Sitetop {
   padding: 20px 0;
   background-color: #272B50; }
   .sitetop_footer > div {
-    width: 100%;
     overflow: hidden;
     *zoom: 1; }
-  .sitetop_footer figure, .sitetop_footer ul {
-    float: left; }
   .sitetop_footer figure {
     padding: 20px; }
   .sitetop_footer ul {
     font-size: 130%;
     text-align: left;
-    width: 27%; }
+    float: left; }
   .sitetop_footer li {
     list-style-type: none;
     line-height: 20px;
@@ -198,10 +193,10 @@ body#Sitetop {
 .sitetop_footer__menu--fb {
   height: 65px;
   background: url(../images/top_icon_footer_fb.png) left center no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: 100px 75px;
+  -moz-background-size: 100px 75px;
+  -o-background-size: 100px 75px;
+  background-size: 100px 75px;
   display: table;
   padding-left: 100px;
   margin: 0 auto 20px;
@@ -212,8 +207,118 @@ body#Sitetop {
   width: 100%;
   margin: 0 auto; }
 
+/*------------------------------------------------------------------------smp*/
 @media screen and (max-width: 600px) {
-  .sitetop_release h2 img {
-    width: 99%; } }
+  .sitetop--youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 90%; }
+
+  .sitetop--youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+  .sitetop_ttl h1 img {
+    width: 200px;
+    padding-bottom: 100px; }
+
+  .sitetop_release {
+    padding: 20px 0; }
+    .sitetop_release h2 img {
+      width: 99%; }
+
+  .sitetop_event {
+    padding: 10px 0; }
+    .sitetop_event h2 {
+      font-size: 300%;
+      padding: 10px 0; }
+    .sitetop_event div {
+      width: 100%; }
+      .sitetop_event div img {
+        width: 115px; }
+    .sitetop_event .sitetop_release__contact a {
+      display: block;
+      margin: 10px auto;
+      width: 70%; }
+
+  .sitetop_pv {
+    padding: 10px 0; }
+    .sitetop_pv h2 {
+      font-size: 300%;
+      padding: 10px 0; }
+
+  .sitetop_member h2 img {
+    width: 144px; }
+  .sitetop_member li {
+    width: 100%;
+    clear: both; }
+  .sitetop_member figure > img {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+    width: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .sitetop_member figure figcaption {
+    position: relative;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    width: 200px;
+    background: none;
+    -webkit-border-radius: 25px 25px;
+    -moz-border-radius: 25px / 25px;
+    border-radius: 25px / 25px;
+    padding: 10px 0;
+    color: #333;
+    overflow: hidden;
+    *zoom: 1; }
+
+  .sitetop_footer figure img {
+    width: 128px; }
+  .sitetop_footer ul {
+    width: 30%; }
+
+  .sitetop_footer__menu--tw, .sitetop_footer__menu--fb {
+    padding-left: 50px;
+    -webkit-background-size: 40px auto;
+    -moz-background-size: 40px auto;
+    -o-background-size: 40px auto;
+    background-size: 40px auto; } }
+/*------------------------------------------------------------------------pc*/
+@media only screen and (min-width: 601px) {
+  .sitetop--youtube {
+    width: 560px;
+    height: 315px;
+    margin: 0 auto; }
+
+  .sitetop_event {
+    width: 630px; }
+
+  .sitetop_member li {
+    float: left;
+    width: 49%; }
+  .sitetop_member figure {
+    position: relative; }
+    .sitetop_member figure figcaption {
+      height: 300px;
+      padding-top: 130px;
+      position: absolute;
+      top: 0;
+      z-index: 1; }
+
+  .sitetop_footer figure {
+    float: left; }
+  .sitetop_footer ul {
+    width: 27%; } }
 #fb-root {
   display: none; }

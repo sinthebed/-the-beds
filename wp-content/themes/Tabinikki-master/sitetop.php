@@ -5,6 +5,7 @@ Template Name: サイトトップ
 ?>
 
 
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -66,12 +67,13 @@ Template Name: サイトトップ
 	<img src="images/top_release.png" alt="release"><br>
 	<img src="images/top_new_two_albums.png" alt="New Two Albums">
 	</h2>
-	<iframe width="560" height="315" src="//www.youtube.com/embed/qB3DZLCgSDw" frameborder="0" allowfullscreen></iframe>
+	<div class="sitetop--youtube">
+		<iframe width="560" height="315" src="//www.youtube.com/embed/qB3DZLCgSDw" frameborder="0" allowfullscreen></iframe>
+	</div>
 </section>
 
 
 <section class="sitetop_event"> 
- <h2>Event</h2>
  <div><p>2014.02.21(fri) <br>
 「washing life one」発売記念ライブ<br>
 @Ikebukuro Adm <br>
@@ -101,7 +103,7 @@ adv ¥2,300/door ¥2,800<br>
 w/カモレ/the coopeez
 </p>
 <figure><img src="images/release_cd.png" alt="washing life two">
-<figcaption>washing life two <br>1000yen(zeikomi)</figcaption>
+<figcaption>washing life two <br>¥1000(tax included)</figcaption>
 </figure>
 <ul>
 	<li>1.サイクリン</li>
@@ -119,11 +121,11 @@ w/カモレ/the coopeez
 
 <section class="sitetop_pv">
 	<h2>And New PV!</h2>
-	<div>
+	<div class="sitetop--youtube">
 		<p>1st pv"ヤギの手紙"（washing life one 収録曲）</p>
 		<iframe width="560" height="315" src="//www.youtube.com/embed/GSMXKC1lfqI" frameborder="0" allowfullscreen></iframe>
 	</div>
-	<div>
+	<div class="sitetop--youtube">
 		<p>2nd pv"サイクリン（washing life two 収録曲）</p>
 		<iframe width="560" height="315" src="//www.youtube.com/embed/b2i6amUYMyw" frameborder="0" allowfullscreen></iframe>
 	</div>
@@ -163,7 +165,7 @@ w/カモレ/the coopeez
 		<img src="images/top_member_hata.jpg">
 	<figcaption>Gt,Cho Shinkichi Hata<br>
 	<a href="https://twitter.com/hatashinkichi"><img src="images/top_icon_tw.png"></a><br>
-	*support
+	*support member
 	</figcaption>
 	</figure>
 </li>
