@@ -2,90 +2,377 @@
 @import "compass";
 
 
-$releaseBaseColor:#020A2D;
+$lMargin:100px;
 $margin:60px;
 $mMargin:20px;
 $sMargin:10px;
+
 $fontF: 'Pontano Sans', sans-serif;
 
-body#Release{
-	background-color: $releaseBaseColor;
+$matwhite:#EFECEE;
+
+
+
+@mixin sectionset($setmg:$margin){
+	padding: $setmg 0;
+}
+@mixin subttl_tex{
+	h2{
+		margin-bottom: $mMargin;
+		font-size: 500%;
+	}
+}
+@mixin subttl_img{
+	h2{
+		margin-bottom: $mMargin;
+	}
+}
+	
+
+
+body#Sitetop{
+	background-color: #FFF;
 	width:100%;
 	height:100%;
 	text-align: center;
-	color:#FFF;
+	color:$matwhite;
 	font-family: $fontF;
-	header{
-		margin-bottom:$margin;
-	}
+}
+
+
+
+
+
+#Loading{
+}
+	
+.sitetop_ttl{
+	@include sectionset;
+	background: url(../images/top_ttl_bg.jpg) center center no-repeat;
+	@include background-size(cover);
+	width:100%;
 	h1 img{
-		width:221px;
+		width:350px;
+		padding-bottom: $lMargin+$margin;
 	}
-	h2{
-		margin-bottom: $margin;
-		text-align:center;
-	}
-	#Container{
-		background: url("../images/release_bg.jpg") center center no-repeat fixed;
-		background-size:cover;
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
-		-o-background-size:cover;
-		padding: $margin 0 0 0;
-	}
-	#ReleaseMain{
-		margin-bottom: $margin;
-		.event{
-			text-align: center;
-			margin:0 auto $margin;
-			clear:both;
-			display:table;
-			p{
-				text-align: left;
-				display:table-cell;
-				vertical-align: middle;
-				font-size:18px;
-				line-height:140%;
-			}
-			figure{
-				width:155px;
-				display:table-cell;
-				img{
-					width:115px;
-				}
-			}
-		}
-	}
-	.gocontact{
+	p{
+		text-align: center;
+		border: 2px $matwhite solid;
 		padding: $mMargin;
+		line-height: $mMargin;
+		width:60px;
+		margin: 0 auto $mMargin;
+		@include text-shadow(1px 0px 1px #333);
+		@include box-shadow(1px 0px 1px #333);
+		
+	}
+	
+}
+
+.sitetop_release{
+	@include sectionset;
+	@include subttl_img;
+}
+
+
+.sitetop_event{
+	@include sectionset;
+	@include subttl_tex;
+	background: url(../images/top_schedule_bg.jpg) center center no-repeat;
+	@include background-size(cover);
+	@include box-sizing(border-box);
+	width:100%;
+	div{
+		@include box-sizing(border-box);
+		text-align: center;
+		margin: 0 auto;
+		padding:0 5px $mMargin;
+		@include clearfix;
+		p,figure,ul{
+			float:left;
+		}
+		p,ul{
+			text-align: left;
+		}
+		img{
+			width:150px;
+		}
+		ul{
+			padding-left: 10px;
+		}
+		li{
+			list-style-type: none;
+		}
+	}
+	
+	.sitetop_release__contact{
 		a{
-			color:#FFF;
+			padding:$sMargin;
+			margin: 0 $sMargin;
+			border: 1px  solid $matwhite;
+			@include box-shadow(3px 3px 0 $matwhite);
+			color:$matwhite;
+			text-decoration: none;
+			@include transition(all 0.1s linear 0.1s);
+			&:hover{
+				position: relative;
+				top:1px;
+				left:1px;
+				@include box-shadow(2px 2px 0 $matwhite);
+			}
 		}
 	}
-	footer{
-		clear:both;
-		font-size:18px;
-		padding: $sMargin;
-		.release_social{
-			margin-bottom: $sMargin;
-		}
+		
+}
+
+.sitetop_pv{
+	@include sectionset;
+	@include subttl_tex;
+	color:#333;
+}
+
+.sitetop_member{
+	@include sectionset;
+	@include subttl_img;
+	@include clearfix;
+	background-color: #EEF1EA;
+	ul{
+		padding-left: 0;
 	}
-	#Entrance{
-		font-family: 'Montserrat Subrayada', sans-serif;
-		font-size:40px;
+	li{
 		margin-bottom: $mMargin;
-		a{
-		color:#FFF;
-		text-decoration: none;
+	}
+	figure{
+		margin-bottom: $mMargin;
+		text-align: center;
+		width:300px;
+		>img{
+			@include border-radius(150px);
+			width:300px;
+			@include box-sizing(border-box);
+		}
+	}
+	figcaption{
+		@include transition(all 0.2s linear 0.2s);
+		@include box-sizing(border-box);
+		margin: 0 auto;
+		width:300px;
+		background-color:rgba(38,38,38,0.8);
+		@include border-radius(150px,150px);
+		@include opacity(0);
+		img{
+			width:40px;
+			height:40px;
+		}
+
+		&:hover{
+			@include opacity(1);
+			
 		}
 	}
 }
 
+.sitetop_footer{
+	
+	@include clearfix;
+	padding: $mMargin 0;
+	background-color: #272B50;
+	>div{
+		@include clearfix;
+	}
+	figure{
+		padding: $mMargin;	
+	}
+	ul{
+		font-size: 130%;
+		text-align: left;
+		float: left;
+	}
+
+	li{
+		list-style-type: none;
+		line-height: 20px;
+		margin-bottom: $mMargin;
+		
+		&:first-child{
+			font-size: 130%;
+			border-bottom: 2px solid $matwhite;
+			text-align: center;
+		}
+		a{
+			color: $matwhite;
+			text-decoration: none;
+			@include transition(all 0.1s linear 0.1s);
+			&:hover{
+				text-decoration: underline;
+				padding-left: 2px;
+			}
+		}
+		
+	}
+}
+
+.sitetop_footer__menu--tw{
+	height:65px;
+	background: url(../images/top_icon_footer_tw.png) left center no-repeat;
+	@include background-size(100px 75px);
+	display: table;
+	padding-left:100px;
+	margin: 0 auto $mMargin;
+}
+.sitetop_footer__menu--fb{
+	height: 65px;
+	background: url(../images/top_icon_footer_fb.png) left center no-repeat;
+	@include background-size(100px 75px);
+	display: table;
+	padding-left:100px;
+	margin: 0 auto $mMargin;
+	@include clearfix;
+}
+.sitetop_footer__copy{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*------------------------------------------------------------------------smp*/
 
 @media screen and (max-width: 600px) {
-	h2 img{
-		width: 99%;
+	.sitetop--youtube {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin: 20px auto;
+	width:90%;
+}
+	.sitetop--youtube iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+	.sitetop_ttl{
+		h1 img{
+		width:200px;
+		padding-bottom: $lMargin;
 	}
+}
+	.sitetop_release{
+		padding:$mMargin 0;
+		h2 img{
+		width: 99%;
+		}
+	}
+	.sitetop_event{
+		padding:$sMargin 0;
+		h2{
+		font-size: 300%;
+		padding:$sMargin 0;
+		}
+		div{
+			width: 100%;
+			img{
+				width: 115px;
+			}
+		}
+		.sitetop_release__contact{
+			a{
+				display: block;
+				margin: $sMargin auto;
+				width: 70%;
+				
+			}
+		}
+	}
+	.sitetop_pv{
+		padding:$sMargin 0;
+		h2{
+			font-size: 300%;
+			padding:$sMargin 0;
+		}
+	}
+	.sitetop_member{
+		h2 img{
+			width:144px;
+		}
+		li{
+			width:100%;
+			clear:both;
+		}
+		figure {
+			>img{
+				@include border-radius(100px);
+				width:200px;
+				@include box-sizing(border-box);
+			}
+			figcaption{
+				position: relative;
+				@include opacity(1);
+				width:200px;
+				background: none;
+				@include border-radius(25px,25px);
+				padding:$sMargin 0;
+				color:#333;
+				@include clearfix;
+			}
+		}
+		
+	}
+	.sitetop_footer{
+		figure{
+			img{
+				width:128px;
+			}
+		}
+		ul{
+			width:30%;	
+		}
+	}
+	.sitetop_footer__menu--tw,.sitetop_footer__menu--fb{
+		padding-left:50px;
+		@include background-size(40px auto);
+	}
+		
+	
+}
+/*------------------------------------------------------------------------pc*/
+@media only screen and (min-width : 601px) {
+	.sitetop--youtube{
+		width:560px;
+		height:315px;
+		margin:0 auto;
+}
+	.sitetop_event{
+		width:630px;
+	}
+	.sitetop_member{
+		li{
+		float:left;
+		width:49%;
+		}
+		figure{
+			position: relative;
+			figcaption{
+				height: 300px;
+				padding-top: 130px;
+				position: absolute;
+				top:0;
+				z-index: 1;
+			}
+		}
+	}
+	.sitetop_footer{
+		figure{
+			float: left;
+		}
+		ul{
+			width:27%;
+		}
+	}
+	
+	
 }
 
 //fb button fix
